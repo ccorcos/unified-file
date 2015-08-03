@@ -1,0 +1,33 @@
+
+.counter {
+  text-align: center;
+  background: black;
+  color: white;
+  border-radius: 5px;
+  width: 100px;
+  height: 60px;
+}
+.counter > div {
+  width: 100%;
+  display: block;
+  line-height: 25px;
+}
+
+.counter > button {
+  width: 80%;
+  display: block;
+  line-height: 25px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  margin: 0 auto;
+}
+
+
+.counters {
+  width: 110px;
+  margin: 0 auto;
+}
+.counters > .counter {
+  margin: 5px;
+}

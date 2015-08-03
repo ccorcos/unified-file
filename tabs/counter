@@ -1,0 +1,44 @@
+~counter.jsx
+
+var Counter = React.createClass({
+  getInitialState: function() {
+    return {count: 0}
+  },
+  inc: function() {
+    this.setState({count:this.state.count+1})
+  },
+  render: function() {
+    return (
+      <div className='counter'>
+        <div className='count'>{this.state.count}</div>
+        <button onClick={this.inc}>inc</button>
+      </div>
+    )
+  }
+})
+
+~counter.css
+
+.counter {
+  text-align: center;
+  background: black;
+  color: white;
+  border-radius: 5px;
+  width: 100px;
+  height: 60px;
+}
+.counter > div {
+  width: 100%;
+  display: block;
+  line-height: 25px;
+}
+
+.counter > button {
+  width: 80%;
+  display: block;
+  line-height: 25px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  margin: 0 auto;
+}

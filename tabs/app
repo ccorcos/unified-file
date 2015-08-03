@@ -1,0 +1,24 @@
+~app.jsx
+
+var App = React.createClass({
+  render: function() {
+    return (
+      <div className='counters'>
+        <Counter/>
+        <Counter/>
+        <Counter/>
+        <Counter/>
+      </div>
+    )
+  }
+})
+
+~app.css
+
+.counters {
+  width: 110px;
+  margin: 0 auto;
+}
+.counters > .counter {
+  margin: 5px;
+}
